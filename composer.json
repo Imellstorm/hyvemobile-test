@@ -1,0 +1,35 @@
+{
+  "name": "hyve-mobile/test",
+  "homepage": "http://hyvemobile.co.za",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Didier Breedt",
+      "email": "didier@hyvemobile.co.za",
+      "homepage": "http://hyvemobile.co.za"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "guzzlehttp/guzzle": "^6.2",
+    "php-amqplib/php-amqplib": "^2.6",
+    "predis/predis": "^1.1",
+    "joshcam/mysqli-database-class": "^2.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "HyveMobileTest\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit tests/*"
+  }
+}
